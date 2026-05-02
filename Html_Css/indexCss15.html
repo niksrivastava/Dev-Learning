@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            height: 650px;
+            /* margin: 2px;
+            padding: 2px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #head1{
+            text-shadow: 2px 2px;
+            text-shadow: 1px 1px white;
+            text-shadow: 1px 1px 1px white; 
+            text-shadow: red 2px 2px 4px, 2px 2px 2px green, 2px 2px 4px blue;
+        }
+        .box{
+            
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 5px 5px brown;
+            box-shadow: -10px -10px 5px brown;
+            box-shadow: 20px 20px 10px 50px brown;
+            box-shadow: inset 10px 10px brown; */
+            box-shadow: 10px 10px green, 20px 20px var(--primary-color);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <img src="DFD 0.jpg" height="100px" width="100px">
+        <h2 id="head1">Welcome to NikhilCodes.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, dolor aut fugiat quia numquam recusandae a molestiae vero labore quisquam ut soluta porro impedit cupiditate iste fugit, dolorum natus blanditiis. Rerum sequi adipisci eveniet numquam reiciendis culpa? Atque, earum quia dolore asperiores nostrum voluptates officiis, beatae qui laborum excepturi maiores?</p>
+    </div>
+</div>
+</body>
+</html>

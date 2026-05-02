@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Ka Gyaan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        #box1{
+            width: 350px;
+            height: 100px;
+            border: 10px solid yellow;
+            margin: 10px;
+            border-radius: 25px;
+            background-color: blue;
+            animation-name: RightMovement;
+            position: relative;
+            /* animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: cubic-bezier(0.1, 0.7, 0.7, 0.1); */
+            /* animation-direction:alternate; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: none;
+            animation-play-state:paused;
+            animation-play-state: running;  */
+            animation: 5s linear 1s infinite alternate none running RightMovement;
+        }
+        #box2{
+            width: 350px;
+            height: 100px;
+            border: 10px solid yellow;
+            margin: 10px;
+            border-radius: 25px;
+            background-color: blue;
+            animation-name: LeftMovement;
+            position: relative;
+            animation: 5s linear 1s infinite alternate none running LeftMovement;
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            border: 10px solid yellow;
+            margin: 10px;
+            border-radius: 100px;
+            background-color: blue;
+            animation-name: LeftMovement;
+            position: relative;
+            top: 425px;
+            left: 650px;
+            animation: 10s ease-in-out infinite alternate-reverse none running CircleMovement;
+
+        }
+        @keyframes RightMovement{
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+                top: 0px;
+                left: 1150px;
+            }
+        }
+        @keyframes LeftMovement{
+            from{
+                top: 850px;
+                left: 1150px;
+            }
+            to{
+                top: 850px;
+                left: 0px;
+            }
+        }
+        @keyframes CircleMovement{
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+            60%{
+                top: 70%;
+                left: 10%;
+            }
+            100%{
+                top: 75%;
+                left: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1"></div>
+        <div id="circle"></div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>
