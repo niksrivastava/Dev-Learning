@@ -8,14 +8,46 @@
 
 // Discount calc.
 
-function discCalc(discount){
-    return function(price){
-        return price - price*(discount/100);
-    };
+// function discCalc(discount){
+//     return function(price){
+//         return price - price*(discount/100);
+//     };
+// }
+
+// let ten = discCalc(10);
+// console.log(ten(200));
+
+// let twenty = discCalc(20);
+// console.log(twenty(200));
+
+
+//objects...
+
+let role = "admin";
+
+let obj = {
+    name: "Nik",
+    age: 21,
+    [role] : "Nik" 
+};
+
+// obj.name;
+
+// obj['name']
+
+for(let key in obj){
+    console.log(key, obj[key]);
 }
 
-let ten = discCalc(10);
-console.log(ten(200));
+console.log(Object.keys(obj));
 
-let twenty = discCalc(20);
-console.log(twenty(200));
+console.log(Object.entries(obj));
+
+obj2 = {...obj};
+
+let obj3 = JSON.parse(JSON.stringify(obj));
+
+obj?.age;
+
+
+
