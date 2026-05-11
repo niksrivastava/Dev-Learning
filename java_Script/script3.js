@@ -18,4 +18,4 @@ let ten = discCalc(10);
 console.log(ten(200));
 
 let twenty = discCalc(20);
-console.log(twenty(200))
+console.log(twenty(200));
